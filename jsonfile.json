@@ -1,18 +1,18 @@
 {
 	"Big Query Schema":[{
-		"name"="s.no",
-		"type"="INTEGER"
+		"name":"s.no",
+		"type":"INTEGER"
 		}
-             {
-		"name"="Emp_id",
-		"type"="STRING"
+             ,{
+		"name":"Emp_id",
+		"type":"STRING"
 	     }
-	     {
-		"name"="Emp_name",
-		"type"="STRING"
+	     ,{
+		"name":"Emp_name",
+		"type":"STRING"
 	     }
-	     {
-		"name"="location",
-		"type"="STRING"
-	     }
+	     ,{
+		"name":"location",
+		"type":"STRING"
+	     }]
 }
