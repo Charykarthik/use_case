@@ -1,3 +1,6 @@
 steps:
-- name:'gcr.io/cloud-builders/gcloud'
-  args: ['init']
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ['cp', 'gs://<your-bucket-name>/<your-file-name>.csv', 'gs://<your-bucket-name>/data/']
+- name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bq'
+  args: ['load', '--source_format=CSV', '<your-dataset-name>.<your-table-name>', 'gs://<your-bucket-name>/data/<your-file-name>.csv
